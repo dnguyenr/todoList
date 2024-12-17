@@ -6,10 +6,16 @@ const API_URL = 'http://192.168.0.41:5000'; // for flask
 function App() {
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState('');
- 
+    useEffect(() => {
+        axios.get(`${API_URL}/tasks`).then((response) => {
+             
+            setTasks(response.data);
+        });
+    }, []);
     const addTask = () => {
         axios.post(`${API_URL}/tasks`, { title: newTask }).then((response) => {
             setTasks([...tasks, response.data]);
+             
             setNewTask('');
         });
     };
