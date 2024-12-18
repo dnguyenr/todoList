@@ -1,10 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## ERRORS encounter
-turn off "Airplay Reciever"
-Go to "General" -> Airdrop & Handoff -> disable Airplay Reciever 
 
+## ERRORS encounter
+1/ turn off "Airplay Reciever"
+Go to "General" -> Airdrop & Handoff -> disable Airplay Reciever 
+2/ make sure to switch to nvm 16x instead of 20x
+    
 ## Available Scripts
 
 In the project directory, you can run:
